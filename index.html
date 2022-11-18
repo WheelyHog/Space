@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="header-logo">
+        <img src="images/logo.svg" alt="" class="logo">
+      </div>
+
+      <div class="header-menu">
+        <!-- <ul class="menu">
+          <li><a href=""><span>00</span>HOME</a></li>
+          <li><a class="active" href=""><span>01</span>DESTINATION</a></li>
+          <li><a href=""><span>02</span>CREW</a></li>
+          <li><a href=""><span>03</span>TECHNOLOGY</a></li>
+        </ul> -->
+        <div class="fullpage-tab menu">
+          <button class="tablinks" onclick="openDestination(event, 'Moon')"><span>00</span>HOME</button>
+          <button class="tablinks" onclick="openDestination(event, 'Mars')" id="defaultOpen"><span>01</span>DESTINATION</button>
+          <button class="tablinks" onclick="openDestination(event, 'Europa')"><span>02</span>CREW</button>
+          <button class="tablinks" onclick="openDestination(event, 'Titan')"><span>03</span>TECHNOLOGY</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="fullpage">
+    <section class="page-section top">
+      <div class="top__wrapper">
+        <div class="container">
+          <div class="fullpage-title">
+            <h3><span>01</span>Pick your destination</h3>
+          </div>
+          <div class="fullpage-inner">
+            <div class="inner-left">
+              <img id="tab-img" class="inner-left-img" src="images/moon.png" alt="">
+            </div>
+            <div class="inner-right">
+
+              <div class="fullpage-tab">
+                <button class="tablinks" onclick="openDestination(event, 'Moon')" id="defaultOpen">Moon</button>
+                <button class="tablinks" onclick="openDestination(event, 'Mars')">Mars</button>
+                <button class="tablinks" onclick="openDestination(event, 'Europa')">Europa</button>
+                <button class="tablinks" onclick="openDestination(event, 'Titan')">Titan</button>
+              </div>
+
+              <div id="Moon" class="tabcontent">
+                <h1>Moon</h1>
+                <p class="tabcontent-p">See our planet as you’ve never seen it before. A perfect relaxing trip away to
+                  help regain perspective and come back refreshed. While you’re there, take in some history by visiting
+                  the Luna 2 and Apollo 11 landing sites.</p>
+                <div class="inner-right-bottom">
+                  <div class="bottom-left">
+                    <h5 class="bottom-left-title">AVG. DISTANCE</h5>
+                    <p class="bottom-left-text">384,400 km</p>
+                  </div>
+                  <div class="bottom-right">
+                    <h5 class="bottom-right-title">Est. travel time</h5>
+                    <p class="bottom-right-text">3 days</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="Mars" class="tabcontent">
+                <h1>Mars</h1>
+                <p class="tabcontent-p">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus
+                  Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of
+                  Everest!</p>
+                <div class="inner-right-bottom">
+                  <div class="bottom-left">
+                    <h5 class="bottom-left-title">AVG. DISTANCE</h5>
+                    <p class="bottom-left-text">225 MIL. km</p>
+                  </div>
+                  <div class="bottom-right">
+                    <h5 class="bottom-right-title">Est. travel time</h5>
+                    <p class="bottom-right-text">9 months</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div id="Europa" class="tabcontent">
+                <h1>Europa</h1>
+                <p class="tabcontent-p">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter
+                  lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or
+                  simple relaxation in your snug wintery cabin.</p>
+                <div class="inner-right-bottom">
+                  <div class="bottom-left">
+                    <h5 class="bottom-left-title">AVG. DISTANCE</h5>
+                    <p class="bottom-left-text">628 MIL. km</p>
+                  </div>
+                  <div class="bottom-right">
+                    <h5 class="bottom-right-title">Est. travel time</h5>
+                    <p class="bottom-right-text">3 years</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div id="Titan" class="tabcontent">
+                <h1>Titan</h1>
+                <p class="tabcontent-p">The only moon known to have a dense atmosphere other than Earth, Titan is a
+                  home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the
+                  Rings of Saturn.</p>
+                <div class="inner-right-bottom">
+                  <div class="bottom-left">
+                    <h5 class="bottom-left-title">AVG. DISTANCE</h5>
+                    <p class="bottom-left-text">1.6 BIL. km</p>
+                  </div>
+                  <div class="bottom-right">
+                    <h5 class="bottom-right-title">Est. travel time</h5>
+                    <p class="bottom-right-text">7 years</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

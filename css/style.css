@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 40px;
+  right: 0;
+  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-left: 55px;
+  display: flex;
+}
+
+.header-logo img {
+  width: 64px;
+}
+
+.header-menu {
+  background-image: url("../images/menu-bground.png");
+  padding-left: 123px;
+  background-size: 100%;
+}
+
+
+.menu {
+  display: flex;
+  gap: 50px;
+  margin-right: 175px;
+}
+
+.menu button {
+  padding: 36px 0;
+}
+
+.menu button span {
+  font-weight: 700;
+  margin-right: 11px;
+}
+
+.top {
+  background-image: url('../images/moon-bg.png');
+}
+
+.top__wrapper {
+  height: 100vh;
+}
+
+.page-section {
+  height: 100vh;
+}
+
+.container {
+  padding: 210px 170px 50px;
+}
+
+.fullpage-title h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.fullpage-title h3 span {
+  font-weight: 700;
+  color: #979797;
+  margin-right: 28px;
+}
+
+.fullpage-inner {
+  display: flex;
+  justify-content: space-around;
+  gap: 150px;
+  align-items: flex-end;
+}
+
+.inner-left,
+.inner-right {
+  width: 450px;
+}
+
+.tablinks {
+  background-color: transparent;
+  color: #D0D6F9;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-right: 35px;
+  border: none;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#Moon h1,
+#Mars h1,
+#Europa h1,
+#Titan h1 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 14px;
+}
+
+#Moon .tabcontent-p,
+#Mars .tabcontent-p,
+#Europa .tabcontent-p,
+#Titan .tabcontent-p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-bottom: 54px;
+  border-bottom: 1px solid #979797;
+}
+
+button.active{
+  border-bottom: 3px solid #fff;
+}
+
+.inner-right-bottom {
+  margin-top: 28px;
+  display: flex;
+}
+
+.bottom-left-title,
+.bottom-right-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  margin-bottom: 12px;
+}
+
+.bottom-left {
+  margin-right: 80px;
+}
+
+.bottom-left-text,
+.bottom-right-text {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
