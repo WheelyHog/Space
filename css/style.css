@@ -58,20 +58,14 @@ body {
   margin-right: 11px;
 }
 
-.top {
-  background-image: url('../images/moon-bg.png');
-}
-
-.top__wrapper {
-  height: 100vh;
-}
-
-.page-section {
-  height: 100vh;
-}
 
 .container {
   padding: 210px 170px 50px;
+  background-image: url('../images/moon-bg.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
 }
 
 .fullpage-title h3 {
