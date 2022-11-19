@@ -38,7 +38,7 @@ body {
 }
 
 .header-menu {
-  background-image: url("/images/menu-bground.png");
+  background-image: url("../images/menu-bground.png");
   padding-left: 123px;
   background-size: 100%;
 }
@@ -62,7 +62,7 @@ body {
 
 .container-destination {
   padding: 210px 170px 40px;
-  background-image: url('/images/moon-bg.png');
+  background-image: url('../images/moon-bg.png');
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -222,12 +222,12 @@ button.active {
 }
 
 .crew-wrapper{
-  background-image: url("/images/crew-bg.png");
+  background-image: url("../images/crew-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #crew-bg-image{
-  background-image: url("/images/douglas.png");
+  background-image: url("./images/douglas.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: right;
