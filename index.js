@@ -48,16 +48,16 @@ function openDestination(evt, planetName) {
 
   switch (planetName) {
     case "Moon":
-      imgSrc = "/images/moon.png";
+      imgSrc = "images/moon.png";
       break;
     case "Mars":
-      imgSrc = "/images/mars.png";
+      imgSrc = "images/mars.png";
       break;
     case "Europa":
-      imgSrc = "/images/europa.png";
+      imgSrc = "images/europa.png";
       break;
     case "Titan":
-      imgSrc = "/images/titan.png";
+      imgSrc = "images/titan.png";
       break;
     default:
   }
