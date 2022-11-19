@@ -18,26 +18,21 @@
       </div>
 
       <div class="header-menu">
-        <!-- <ul class="menu">
-          <li><a href=""><span>00</span>HOME</a></li>
-          <li><a class="active" href=""><span>01</span>DESTINATION</a></li>
-          <li><a href=""><span>02</span>CREW</a></li>
-          <li><a href=""><span>03</span>TECHNOLOGY</a></li>
-        </ul> -->
-        <div class="fullpage-tab menu">
-          <button class="tablinks" onclick="openDestination(event, 'Moon')"><span>00</span>HOME</button>
-          <button class="tablinks" onclick="openDestination(event, 'Mars')" id="defaultOpen"><span>01</span>DESTINATION</button>
-          <button class="tablinks" onclick="openDestination(event, 'Europa')"><span>02</span>CREW</button>
-          <button class="tablinks" onclick="openDestination(event, 'Titan')"><span>03</span>TECHNOLOGY</button>
+        <div class="header-tab menu">
+          <button class="menulinks" onclick="chooseMenu(event, 'Moon')"><span>00</span>HOME</button>
+          <button class="menulinks" onclick="chooseMenu(event, 'Destination')"
+            id="defaultActive"><span>01</span>DESTINATION</button>
+          <button class="menulinks" onclick="chooseMenu(event, 'Crew')"><span>02</span>CREW</button>
+          <button class="menulinks" onclick="chooseMenu(event, 'Technology')"><span>03</span>TECHNOLOGY</button>
         </div>
       </div>
     </div>
   </header>
 
   <main id="fullpage">
-    <section class="page-section top">
+    <section id="Destination" class="page-section pagecontent">
       <div class="top__wrapper">
-        <div class="container">
+        <div class="container-destination">
           <div class="fullpage-title">
             <h3><span>01</span>Pick your destination</h3>
           </div>
@@ -131,6 +126,79 @@
         </div>
       </div>
     </section>
+
+    <section id="Crew" class="page-section pagecontent">
+      <div class="crew-wrapper">
+        <div id="crew-bg-image">
+          <div class="container crew-inner">
+
+            <div id="Commander" class="crewcontent">
+              <div class="crew-inner-left">
+                <div class="fullpage-title">
+                  <h3><span>02</span>Meet your crew</h3>
+                </div>
+                <div class="crew-text-block">
+                  <h3 class="crew-subtitle">Commander </h3>
+                  <h2 class="crew-title">Douglas Hurley</h2>
+                  <p class="crew-descr">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and
+                    former
+                    NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Specialist" class="crewcontent">
+              <div class="crew-inner-left">
+                <div class="fullpage-title">
+                  <h3><span>02</span>Meet your crew</h3>
+                </div>
+                <div class="crew-text-block">
+                  <h3 class="crew-subtitle">Mission Specialist</h3>
+                  <h2 class="crew-title">MARK SHUTTLEWORTH</h2>
+                  <p class="crew-descr">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Pilot" class="crewcontent">
+              <div class="crew-inner-left">
+                <div class="fullpage-title">
+                  <h3><span>02</span>Meet your crew</h3>
+                </div>
+                <div class="crew-text-block">
+                  <h3 class="crew-subtitle">PILOT </h3>
+                  <h2 class="crew-title">Victor Glover</h2>
+                  <p class="crew-descr">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Engineer" class="crewcontent">
+              <div class="crew-inner-left">
+                <div class="fullpage-title">
+                  <h3><span>02</span>Meet your crew</h3>
+                </div>
+                <div class="crew-text-block">
+                  <h3 class="crew-subtitle">Flight Engineer </h3>
+                  <h2 class="crew-title">Anousheh Ansari</h2>
+                  <p class="crew-descr">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="crewpage-tab">
+              <button class="crewlinks" onclick="openCrew(event, 'Commander')" id="crewActive"></button>
+              <button class="crewlinks" onclick="openCrew(event, 'Specialist')"></button>
+              <button class="crewlinks" onclick="openCrew(event, 'Pilot')"></button>
+              <button class="crewlinks" onclick="openCrew(event, 'Engineer')"></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
   </main>
 
   <script src="index.js"></script>
