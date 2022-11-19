@@ -13,16 +13,16 @@ function openDestination(evt, planetName) {
 
   switch (planetName) {
     case "Moon":
-      imgSrc = "/images/moon.png";
+      imgSrc = "../images/moon.png";
       break;
     case "Mars":
-      imgSrc = "/images/mars.png";
+      imgSrc = "../images/mars.png";
       break;
     case "Europa":
-      imgSrc = "/images/europa.png";
+      imgSrc = "../images/europa.png";
       break;
     case "Titan":
-      imgSrc = "/images/titan.png";
+      imgSrc = "../images/titan.png";
       break;
     default:
   }
@@ -68,16 +68,16 @@ function openCrew(evt, crewItem) {
 
 switch (crewItem) {
     case "Commander":
-      crewImgSrc = "url('/images/douglas.png')";
+      crewImgSrc = "url('../images/douglas.png')";
       break;
     case "Specialist":
-      crewImgSrc = "url('/images/mark.png')";
+      crewImgSrc = "url('../images/mark.png')";
       break;
     case "Pilot":
-      crewImgSrc = "url('/images/victor.png')";
+      crewImgSrc = "url('../images/victor.png')";
       break;
     case "Engineer":
-      crewImgSrc = "url('/images/anoushen.png')";
+      crewImgSrc = "url('../images/anoushen.png')";
       break;
     default:
   }
