@@ -86,3 +86,36 @@ switch (crewItem) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("crewActive").click();
+
+// ----------------------------------------------------------
+
+function openTechno(evt, technoItem) {
+  var i, technocontent, technolinks, technoImgSrc;
+  technocontent = document.getElementsByClassName("technocontent");
+  for (i = 0; i < technocontent.length; i++) {
+    technocontent[i].style.display = "none";
+  }
+  technolinks = document.getElementsByClassName("technolinks");
+  for (i = 0; i < technolinks.length; i++) {
+    technolinks[i].className = technolinks[i].className.replace(" techno-active", "");
+  }
+  document.getElementById(technoItem).style.display = "block";
+  evt.currentTarget.className += " techno-active";
+
+switch (technoItem) {
+    case "Launch":
+      technoImgSrc = "url('./images/launch.jpg')";
+      break;
+    case "Spaceport":
+      technoImgSrc = "url('./images/spaceport.jpg')";
+      break;
+    case "Capsule":
+      technoImgSrc = "url('./images/capsule.jpg')";
+      break;
+    default:
+  }
+  document.getElementById("techno-bg-image").style.backgroundImage = technoImgSrc;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("technoActive").click();
